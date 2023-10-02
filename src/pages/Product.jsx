@@ -1,11 +1,13 @@
 import styles from "./Product.module.css";
-
+import PageNavigation from "../components/PageNavigation";
+import imgproduct from "../assests/img-1.jpg";
 export default function Product() {
   return (
     <main className={styles.product}>
+      <PageNavigation />
       <section>
         <img
-          src="img-1.jpg"
+          src={imgproduct}
           alt="person with dog overlooking mountain with sunset"
         />
         <div>

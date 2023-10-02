@@ -1,9 +1,11 @@
 // Uses the same styles as Product
 import styles from "./Product.module.css";
-
+import PageNavigation from "../components/PageNavigation";
+import imgprice from "../assests/img-2.jpg";
 export default function Product() {
   return (
     <main className={styles.product}>
+      <PageNavigation />
       <section>
         <div>
           <h2>
@@ -17,7 +19,7 @@ export default function Product() {
             voluptatem iste.
           </p>
         </div>
-        <img src="img-2.jpg" alt="overview of a large city with skyscrapers" />
+        <img src={imgprice} alt="overview of a large city with skyscrapers" />
       </section>
     </main>
   );
